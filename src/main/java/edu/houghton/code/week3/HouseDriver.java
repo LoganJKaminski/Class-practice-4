@@ -38,15 +38,15 @@ public class HouseDriver {
         
         System.out.println("");
         h1.setAge(5);
-        System.out.println("Mutator Method: the new age for house h1 is " + h1.getAge());
+        System.out.println("Mutator Method: the new age for house H1 is " + h1.getAge());
         h1.setType("Semi-Attached");
-        System.out.println("Mutator Method: the new type for house h1 is " + h1.getType());
+        System.out.println("Mutator Method: the new type for house H1 is " + h1.getType());
         h1.setCost(240000.0);
-        System.out.println("Mutator Method: the new cost for house h1 is " + h1.getCost());
+        System.out.println("Mutator Method: the new cost for house H1 is " + h1.getCost());
         h1.setHouse(150000.0, 10);
-        System.out.println("Mutator Method: the new cost for house h1 is " + h1.getCost() + " and its new age is " + h1.getCost());
+        System.out.println("Mutator Method: the new cost for house H1 is " + h1.getCost() + " and its new age is " + h1.getCost());
         h1.setHouse(10000.0, 40, "Attached");
-        System.out.println("Mutator Method: the new cost for house h1 is " + h1.getCost() + " and its new age is " + h1.getCost() + " and its new type is " + h1.getType());
+        System.out.println("Mutator Method: the new cost for house H1 is " + h1.getCost() + " and its new age is " + h1.getCost() + " and its new type is " + h1.getType());
         
         System.out.println("");
         System.out.println("toString: " + h1.toString());
