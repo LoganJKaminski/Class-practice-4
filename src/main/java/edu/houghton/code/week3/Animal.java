@@ -50,7 +50,7 @@ public class Animal {
     
     public String print() {
         return "animal (name=" + getName() + ", mass=" + getMass()
-                + ", legs=" + getLegs() + ", " + "status=" + (getIsAlive() ? "Alive" : "Dead");
+                + ", legs=" + getLegs() + ", " + "status=" + (getIsAlive() ? "Alive" : "Dead") + ")";
     }
     
     public static int getAnimalPopulation() {
