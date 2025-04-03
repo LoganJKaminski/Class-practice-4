@@ -53,6 +53,12 @@ public class Animal {
                 + ", legs=" + getLegs() + ", " + "status=" + (getIsAlive() ? "Alive" : "Dead") + ")";
     }
     
+    @Override
+    public String toString() {
+        return "animal (name=" + getName() + ", mass=" + getMass()
+                + ", legs=" + getLegs() + ", " + "status=" + (getIsAlive() ? "Alive" : "Dead") + ")";
+    }
+    
     public static int getAnimalPopulation() {
         return counter;
     }
@@ -64,8 +70,10 @@ public class Animal {
         return new Animal(getMass()/2.0f, getName(), getLegs());
     }
     public void die() {
-        isAlive = false;
-        animalsAlive--;
+        if(isAlive) {
+            isAlive = false;
+            animalsAlive--;
+        }
     }
 
 }
